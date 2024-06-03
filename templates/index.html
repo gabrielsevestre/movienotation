@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Prediction</title>
+</head>
+<body>
+    <h1>How good is your movie on TMDB ?</h1>
+    <h2>Usage:</h2>
+    <p>Write a title, a short overview of your movie, as well as genres to predict what average vote
+        your movie would have on TMDB. Play with different genres to see what would best fit !<p>
+
+    <p>Accepted genres are Crime, Comedy, Adventure, Action,
+        Science Fiction, Animation, Family, Drama, Romance, Music, Fantasy,
+        Thriller, War, Western, Mystery, History, Horror, Documentary, Foreign, TV Movie.
+        Other inputs will run the prediction but without a specified genre.</p>
+    <form action="/predict" method="post">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br><br>
+        <label for="overview">Overview:</label><br>
+        <textarea id="overview" name="overview"></textarea><br><br>
+        <label for="genres">Genres:</label><br>
+        <input type="text" id="genres" name="genres"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
